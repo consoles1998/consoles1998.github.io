@@ -6,11 +6,11 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="http://hwhjl.com/"/>
-  <updated>2019-11-28T04:31:46.648Z</updated>
+  <updated>2019-12-26T12:03:15.096Z</updated>
   <id>http://hwhjl.com/</id>
   
   <author>
-    <name>板栗铲屎官</name>
+    <name>He Jinliang</name>
     
   </author>
   
@@ -18,19 +18,18 @@
   
   <entry>
     <title>第一篇文章</title>
-    <link href="http://hwhjl.com/2019/11/27/di-yi-pian/"/>
-    <id>http://hwhjl.com/2019/11/27/di-yi-pian/</id>
+    <link href="http://hwhjl.com/2019/11/27/wo-de-ai/"/>
+    <id>http://hwhjl.com/2019/11/27/wo-de-ai/</id>
     <published>2019-11-27T11:50:24.000Z</published>
-    <updated>2019-11-28T04:31:46.648Z</updated>
+    <updated>2019-12-26T12:03:15.096Z</updated>
     
-    <content type="html"><![CDATA[<p>#我不是真真的快乐#</p>]]></content>
+    <content type="html"><![CDATA[<h1 id="我不是真真的快乐"><a href="#我不是真真的快乐" class="headerlink" title="我不是真真的快乐"></a>我不是真真的快乐</h1>]]></content>
     
     <summary type="html">
     
       
       
-        &lt;p&gt;#我不是真真的快乐#&lt;/p&gt;
-
+        &lt;h1 id=&quot;我不是真真的快乐&quot;&gt;&lt;a href=&quot;#我不是真真的快乐&quot; class=&quot;headerlink&quot; title=&quot;我不是真真的快乐&quot;&gt;&lt;/a&gt;我不是真真的快乐&lt;/h1&gt;
       
     
     </summary>
