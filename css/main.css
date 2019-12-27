@@ -302,7 +302,6 @@ hr {
   height: 3px;
   border: none;
   background-color: #ddd;
-  background-image: repeating-linear-gradient(-45deg, #fff, #fff 4px, transparent 4px, transparent 8px);
 }
 blockquote {
   padding: 0 15px;
@@ -1927,7 +1926,7 @@ img:hover {
   width: 4px;
   height: 4px;
   border-radius: 50%;
-  background: #ff3e6c;
+  background: #ff057e;
 }
 .links-of-blogroll {
   font-size: 13px;
@@ -2780,6 +2779,7 @@ img:hover {
     width: 100%;
     padding: 20px;
     border-radius: initial;
+    float: none;
   }
 }
 @media (max-width: 767px) {
@@ -3224,4 +3224,19 @@ img:hover {
   .pagination {
     margin: 8px 0 0;
   }
+}
+.site-nav-toggle {
+  top: 0;
+  -webkit-transform: translateY(78%);
+  -moz-transform: translateY(78%);
+  -ms-transform: translateY(78%);
+  -o-transform: translateY(78%);
+  transform: translateY(78%);
+}
+.post {
+  margin-top: 60px;
+  margin-bottom: 60px;
+  padding: 25px;
+  -webkit-box-shadow: 0 0 5px rgba(202,203,203,0.5);
+  -moz-box-shadow: 0 0 5px rgba(202,203,204,0.5);
 }
