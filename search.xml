@@ -8,7 +8,7 @@
       <link href="/2019/11/27/di-yi-pian-wen-zhang/"/>
       <url>/2019/11/27/di-yi-pian-wen-zhang/</url>
       
-        <content type="html"><![CDATA[<h1 id="新来乍到，hexo请多指教"><a href="#新来乍到，hexo请多指教" class="headerlink" title="新来乍到，hexo请多指教"></a>新来乍到，hexo请多指教</h1><p><img src="https://upload-images.jianshu.io/upload_images/20609346-8ef7d5e67824cb63.jpg?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240" alt=""></p>]]></content>
+        <content type="html"><![CDATA[<h1 id="新来乍到，hexo请多指教"><a href="#新来乍到，hexo请多指教" class="headerlink" title="新来乍到，hexo请多指教"></a>新来乍到，hexo请多指教</h1><pre class=" language-java"><code class="language-java">    System<span class="token punctuation">.</span>out<span class="token punctuation">.</span><span class="token function">printf</span><span class="token punctuation">(</span><span class="token string">"hello World"</span><span class="token punctuation">)</span>      System<span class="token punctuation">.</span>out<span class="token punctuation">.</span><span class="token function">printf</span><span class="token punctuation">(</span><span class="token string">"hello World"</span><span class="token punctuation">)</span>       System<span class="token punctuation">.</span>out<span class="token punctuation">.</span><span class="token function">printf</span><span class="token punctuation">(</span><span class="token string">"hello World"</span><span class="token punctuation">)</span>  </code></pre>]]></content>
       
       
       
