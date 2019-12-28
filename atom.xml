@@ -6,7 +6,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="http://hwhjl.com/"/>
-  <updated>2019-12-27T10:25:07.376Z</updated>
+  <updated>2019-12-28T04:11:47.395Z</updated>
   <id>http://hwhjl.com/</id>
   
   <author>
@@ -17,19 +17,34 @@
   <generator uri="https://hexo.io/">Hexo</generator>
   
   <entry>
+    <title>分流</title>
+    <link href="http://hwhjl.com/2019/12/05/fen-liu/"/>
+    <id>http://hwhjl.com/2019/12/05/fen-liu/</id>
+    <published>2019-12-05T04:10:50.000Z</published>
+    <updated>2019-12-28T04:11:47.395Z</updated>
+    
+    <summary type="html">
+    
+    </summary>
+    
+    
+    
+  </entry>
+  
+  <entry>
     <title>开篇</title>
     <link href="http://hwhjl.com/2019/11/27/di-yi-pian-wen-zhang/"/>
     <id>http://hwhjl.com/2019/11/27/di-yi-pian-wen-zhang/</id>
     <published>2019-11-27T11:50:24.000Z</published>
-    <updated>2019-12-27T10:25:07.376Z</updated>
+    <updated>2019-12-28T06:04:26.473Z</updated>
     
-    <content type="html"><![CDATA[<h1 id="新来乍到，hexo请多指教"><a href="#新来乍到，hexo请多指教" class="headerlink" title="新来乍到，hexo请多指教"></a>新来乍到，hexo请多指教</h1><pre class=" language-java"><code class="language-java">    System<span class="token punctuation">.</span>out<span class="token punctuation">.</span><span class="token function">printf</span><span class="token punctuation">(</span><span class="token string">"hello World"</span><span class="token punctuation">)</span>      System<span class="token punctuation">.</span>out<span class="token punctuation">.</span><span class="token function">printf</span><span class="token punctuation">(</span><span class="token string">"hello World"</span><span class="token punctuation">)</span>       System<span class="token punctuation">.</span>out<span class="token punctuation">.</span><span class="token function">printf</span><span class="token punctuation">(</span><span class="token string">"hello World"</span><span class="token punctuation">)</span>  </code></pre>]]></content>
+    <content type="html"><![CDATA[<h1 id="新来乍到，hexo请多指教"><a href="#新来乍到，hexo请多指教" class="headerlink" title="新来乍到，hexo请多指教"></a>新来乍到，hexo请多指教</h1><p><img src="http://img.hjl1998.cn/vx.jpg" alt=""></p>]]></content>
     
     <summary type="html">
     
       
       
-        &lt;h1 id=&quot;新来乍到，hexo请多指教&quot;&gt;&lt;a href=&quot;#新来乍到，hexo请多指教&quot; class=&quot;headerlink&quot; title=&quot;新来乍到，hexo请多指教&quot;&gt;&lt;/a&gt;新来乍到，hexo请多指教&lt;/h1&gt;&lt;pre class=&quot; language-java&quot;&gt;&lt;
+        &lt;h1 id=&quot;新来乍到，hexo请多指教&quot;&gt;&lt;a href=&quot;#新来乍到，hexo请多指教&quot; class=&quot;headerlink&quot; title=&quot;新来乍到，hexo请多指教&quot;&gt;&lt;/a&gt;新来乍到，hexo请多指教&lt;/h1&gt;&lt;p&gt;&lt;img src=&quot;http://img.hjl19
       
     
     </summary>

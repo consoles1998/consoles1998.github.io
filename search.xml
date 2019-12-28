@@ -4,11 +4,24 @@
   
     
     <entry>
+      <title>分流</title>
+      <link href="/2019/12/05/fen-liu/"/>
+      <url>/2019/12/05/fen-liu/</url>
+      
+        <content type="html"><![CDATA[]]></content>
+      
+      
+      
+    </entry>
+    
+    
+    
+    <entry>
       <title>开篇</title>
       <link href="/2019/11/27/di-yi-pian-wen-zhang/"/>
       <url>/2019/11/27/di-yi-pian-wen-zhang/</url>
       
-        <content type="html"><![CDATA[<h1 id="新来乍到，hexo请多指教"><a href="#新来乍到，hexo请多指教" class="headerlink" title="新来乍到，hexo请多指教"></a>新来乍到，hexo请多指教</h1><pre class=" language-java"><code class="language-java">    System<span class="token punctuation">.</span>out<span class="token punctuation">.</span><span class="token function">printf</span><span class="token punctuation">(</span><span class="token string">"hello World"</span><span class="token punctuation">)</span>      System<span class="token punctuation">.</span>out<span class="token punctuation">.</span><span class="token function">printf</span><span class="token punctuation">(</span><span class="token string">"hello World"</span><span class="token punctuation">)</span>       System<span class="token punctuation">.</span>out<span class="token punctuation">.</span><span class="token function">printf</span><span class="token punctuation">(</span><span class="token string">"hello World"</span><span class="token punctuation">)</span>  </code></pre>]]></content>
+        <content type="html"><![CDATA[<h1 id="新来乍到，hexo请多指教"><a href="#新来乍到，hexo请多指教" class="headerlink" title="新来乍到，hexo请多指教"></a>新来乍到，hexo请多指教</h1><p><img src="http://img.hjl1998.cn/vx.jpg" alt=""></p>]]></content>
       
       
       
