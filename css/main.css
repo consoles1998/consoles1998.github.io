@@ -1658,6 +1658,16 @@ pre .javascript .function {
 .rtl.post-title {
   font-family: UKIJ Ekran;
 }
+.post-body p a {
+  color: #0593d3;
+  border-bottom: none;
+  border-bottom: 1px solid #0593d3;
+}
+.post-body p a:hover {
+  color: #fc6423;
+  border-bottom: none;
+  border-bottom: 1px solid #fc6423;
+}
 .sidebar {
   position: fixed;
   right: 0;
@@ -1926,7 +1936,7 @@ img:hover {
   width: 4px;
   height: 4px;
   border-radius: 50%;
-  background: #03ffbe;
+  background: #30b1ff;
 }
 .links-of-blogroll {
   font-size: 13px;
@@ -3232,4 +3242,11 @@ img:hover {
   -ms-transform: translateY(78%);
   -o-transform: translateY(78%);
   transform: translateY(78%);
+}
+.post {
+  margin-top: 10px;
+  margin-bottom: 5px;
+  padding: 5px;
+  -webkit-box-shadow: 0 0 5px rgba(202,203,204,0.5);
+  -moz-box-shadow: 0 0 5px rgba(202,203,204,0.5);
 }
