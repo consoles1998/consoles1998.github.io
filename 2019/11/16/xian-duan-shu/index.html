@@ -68,7 +68,7 @@
 
 
 
-  <meta name="keywords" content="学习笔记," />
+  <meta name="keywords" content="何不回头看看数据结构," />
 
 
 
@@ -82,16 +82,16 @@
 
 
 <meta name="description" content="前言​        细数着大三也就过去了大半，想想前两年过的大学，懊悔不已，当初为什么不好好学习，在考研和就业两条路上斟酌了很久，最后还是选择了就业，听学长说大三下学期的春招可以试试，怀着一腔热血和悔恨，决定还是从基础看起，既然身为程序员，基本的数据结构知识储备还是必不可少的，那么废话不多说，数据结构系列走起。 介绍​        线段树，是一种二叉搜索树，顾名思义，是对一段数据进行操作的树，">
-<meta name="keywords" content="学习笔记">
+<meta name="keywords" content="何不回头看看数据结构">
 <meta property="og:type" content="article">
-<meta property="og:title" content="线段树笔记">
+<meta property="og:title" content="线段树入门笔记">
 <meta property="og:url" content="http:&#x2F;&#x2F;hwhjl.com&#x2F;2019&#x2F;11&#x2F;16&#x2F;xian-duan-shu&#x2F;index.html">
 <meta property="og:site_name" content="H&#39;s Blog">
 <meta property="og:description" content="前言​        细数着大三也就过去了大半，想想前两年过的大学，懊悔不已，当初为什么不好好学习，在考研和就业两条路上斟酌了很久，最后还是选择了就业，听学长说大三下学期的春招可以试试，怀着一腔热血和悔恨，决定还是从基础看起，既然身为程序员，基本的数据结构知识储备还是必不可少的，那么废话不多说，数据结构系列走起。 介绍​        线段树，是一种二叉搜索树，顾名思义，是对一段数据进行操作的树，">
 <meta property="og:locale" content="zh-Hans">
 <meta property="og:image" content="http:&#x2F;&#x2F;img.hjl1998.cn&#x2F;20200106180921.png">
 <meta property="og:image" content="http:&#x2F;&#x2F;img.hjl1998.cn&#x2F;20200106181904.png">
-<meta property="og:updated_time" content="2020-01-06T12:17:43.249Z">
+<meta property="og:updated_time" content="2020-01-08T11:36:32.730Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:image" content="http:&#x2F;&#x2F;img.hjl1998.cn&#x2F;20200106180921.png">
 
@@ -129,7 +129,7 @@
 
 
 
-  <title>线段树笔记 | H's Blog</title>
+  <title>线段树入门笔记 | H's Blog</title>
   
 
 
@@ -327,7 +327,7 @@
 
         
         
-          <h1 class="post-title" itemprop="name headline">线段树笔记</h1>
+          <h1 class="post-title" itemprop="name headline">线段树入门笔记</h1>
         
 
         <div class="post-meta">
@@ -364,8 +364,8 @@
               
               
                 <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
-                  <a href="/categories/%E4%BD%95%E4%B8%8D%E5%9B%9E%E5%A4%B4%E7%9C%8B%E7%9C%8B%E6%95%B0%E6%8D%AE%E7%BB%93%E6%9E%84/" itemprop="url" rel="index">
-                    <span itemprop="name">何不回头看看数据结构</span>
+                  <a href="/categories/%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0/" itemprop="url" rel="index">
+                    <span itemprop="name">学习笔记</span>
                   </a>
                 </span>
 
@@ -418,7 +418,7 @@
       
         <h1 id="前言"><a href="#前言" class="headerlink" title="前言"></a>前言</h1><p>​        细数着大三也就过去了大半，想想前两年过的大学，懊悔不已，当初为什么不好好学习，在考研和就业两条路上斟酌了很久，最后还是选择了就业，听学长说大三下学期的春招可以试试，怀着一腔热血和悔恨，决定还是从基础看起，既然身为程序员，基本的数据结构知识储备还是必不可少的，那么废话不多说，数据结构系列走起。</p>
 <h1 id="介绍"><a href="#介绍" class="headerlink" title="介绍"></a>介绍</h1><p>​        线段树，是一种二叉搜索树，顾名思义，是对一段数据进行操作的树，它将区间划分成一些单元区间，每个单元区间对应线段树中的一个叶子节点。经典的线段树例题<code>区间染色</code>、<code>区间查询</code>。</p>
-<h1 id="区间的一般操作"><a href="#区间的一般操作" class="headerlink" title="区间的一般操作"></a>区间的一般操作</h1><p>一般来说，区间的长度一般都是确定的，所以对于区间的<code>添加</code>和<code>删除</code>操作我们一般不考虑，所以对于线段树，着重研究它的<code>更新</code>和<code>查询</code>两个操作，对于复杂度，线段树将O(N)降低到了O(logN)</p>
+<h1 id="区间的一般操作"><a href="#区间的一般操作" class="headerlink" title="区间的一般操作"></a>区间的一般操作</h1><p>一般来说，区间的长度一般都是确定的，所以对于区间的<code>添加</code>和<code>删除</code>操作我们一般不考虑，所以对于线段树，着重研究它的<code>更新</code>和<code>查询</code>两个操作，对于复杂度，线段树将一般区间操作的O(N)降低到了O(logN)</p>
 <h1 id="实现"><a href="#实现" class="headerlink" title="实现"></a>实现</h1><h3 id="线段树的形式"><a href="#线段树的形式" class="headerlink" title="线段树的形式"></a>线段树的形式</h3><p>以求和为例，分层级表示一段区间内的和，每个节点表示不同区间的和</p>
 <p><img src="http://img.hjl1998.cn/20200106180921.png" alt=""></p>
 <p>上述为8个元素的线段树，而8这个元素比较特殊，刚好是2的3次。其实线段树不一定是完全二叉树，也不一定是满二叉树，如下图10个元素</p>
@@ -527,7 +527,67 @@
 
 Process finished with exit code <span class="token number">0</span></code></pre>
 <p>线段树的构造是不是简单的一批。</p>
-<h1 id="查询"><a href="#查询" class="headerlink" title="查询"></a>查询</h1><p>明天再写，媳妇儿催我煲电话粥了。。。</p>
+<h1 id="查询"><a href="#查询" class="headerlink" title="查询"></a>查询</h1><p>查询操作得分情况考虑</p>
+<p>考虑用递归简化代码</p>
+<p>代码如下</p>
+<pre class=" language-java"><code class="language-java">
+    <span class="token comment" spellcheck="true">//返回[L，R]区间的值</span>
+    <span class="token keyword">public</span> E <span class="token function">query</span><span class="token punctuation">(</span><span class="token keyword">int</span> L<span class="token punctuation">,</span><span class="token keyword">int</span> R<span class="token punctuation">)</span><span class="token punctuation">{</span>
+        <span class="token keyword">if</span> <span class="token punctuation">(</span>L<span class="token operator">&lt;</span><span class="token number">0</span><span class="token operator">||</span>L<span class="token operator">>=</span>data<span class="token punctuation">.</span>length<span class="token operator">||</span>R<span class="token operator">&lt;</span><span class="token number">0</span><span class="token operator">||</span>R<span class="token operator">>=</span>data<span class="token punctuation">.</span>length<span class="token operator">||</span>R<span class="token operator">&lt;</span>L<span class="token punctuation">)</span><span class="token punctuation">{</span>
+            <span class="token keyword">throw</span> <span class="token keyword">new</span> <span class="token class-name">IllegalArgumentException</span><span class="token punctuation">(</span><span class="token string">"Index is illega."</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+        <span class="token punctuation">}</span>
+        <span class="token keyword">return</span> <span class="token function">query</span><span class="token punctuation">(</span><span class="token number">0</span><span class="token punctuation">,</span><span class="token number">0</span><span class="token punctuation">,</span>data<span class="token punctuation">.</span>length<span class="token operator">-</span><span class="token number">1</span><span class="token punctuation">,</span>L<span class="token punctuation">,</span>R<span class="token punctuation">)</span><span class="token punctuation">;</span>
+    <span class="token punctuation">}</span>
+    <span class="token comment" spellcheck="true">//搜索在以treeIndex为根的线段树中[l,r]的范围里，搜索区间[L，R]的值</span>
+    <span class="token keyword">public</span> E <span class="token function">query</span><span class="token punctuation">(</span><span class="token keyword">int</span> treeIndex<span class="token punctuation">,</span><span class="token keyword">int</span> l<span class="token punctuation">,</span><span class="token keyword">int</span> r<span class="token punctuation">,</span><span class="token keyword">int</span> L<span class="token punctuation">,</span><span class="token keyword">int</span> R<span class="token punctuation">)</span><span class="token punctuation">{</span>
+        <span class="token keyword">if</span><span class="token punctuation">(</span>l<span class="token operator">==</span>L<span class="token operator">&amp;&amp;</span>R<span class="token operator">==</span>r<span class="token punctuation">)</span>
+            <span class="token keyword">return</span> tree<span class="token punctuation">[</span>treeIndex<span class="token punctuation">]</span><span class="token punctuation">;</span>
+        <span class="token keyword">int</span> mid <span class="token operator">=</span> l<span class="token operator">+</span><span class="token punctuation">(</span>r<span class="token operator">-</span>l<span class="token punctuation">)</span><span class="token operator">/</span><span class="token number">2</span><span class="token punctuation">;</span>
+        <span class="token keyword">int</span> leftTreeIndex <span class="token operator">=</span> <span class="token function">leftChild</span><span class="token punctuation">(</span>treeIndex<span class="token punctuation">)</span><span class="token punctuation">;</span>
+        <span class="token keyword">int</span> rightTreeIndex <span class="token operator">=</span> <span class="token function">rightChild</span><span class="token punctuation">(</span>treeIndex<span class="token punctuation">)</span><span class="token punctuation">;</span>
+
+        <span class="token keyword">if</span><span class="token punctuation">(</span>R<span class="token operator">&lt;=</span>mid<span class="token punctuation">)</span>
+            <span class="token keyword">return</span> <span class="token function">query</span><span class="token punctuation">(</span>leftTreeIndex<span class="token punctuation">,</span>l<span class="token punctuation">,</span>mid<span class="token punctuation">,</span>L<span class="token punctuation">,</span>R<span class="token punctuation">)</span><span class="token punctuation">;</span>
+        <span class="token keyword">else</span> <span class="token keyword">if</span> <span class="token punctuation">(</span>L<span class="token operator">>=</span>mid<span class="token punctuation">)</span>
+            <span class="token keyword">return</span> <span class="token function">query</span><span class="token punctuation">(</span>rightTreeIndex<span class="token punctuation">,</span>mid<span class="token operator">+</span><span class="token number">1</span><span class="token punctuation">,</span>r<span class="token punctuation">,</span>L<span class="token punctuation">,</span>R<span class="token punctuation">)</span><span class="token punctuation">;</span>
+
+        E leftResult <span class="token operator">=</span> <span class="token function">query</span><span class="token punctuation">(</span>leftTreeIndex<span class="token punctuation">,</span>l<span class="token punctuation">,</span>mid<span class="token punctuation">,</span>L<span class="token punctuation">,</span>mid<span class="token punctuation">)</span><span class="token punctuation">;</span>
+        E rightResult <span class="token operator">=</span> <span class="token function">query</span><span class="token punctuation">(</span>rightTreeIndex<span class="token punctuation">,</span>mid<span class="token operator">+</span><span class="token number">1</span><span class="token punctuation">,</span>r<span class="token punctuation">,</span>mid<span class="token punctuation">,</span>R<span class="token punctuation">)</span><span class="token punctuation">;</span>
+
+        <span class="token keyword">return</span> merger<span class="token punctuation">.</span><span class="token function">merge</span><span class="token punctuation">(</span>leftResult<span class="token punctuation">,</span>rightResult<span class="token punctuation">)</span><span class="token punctuation">;</span>
+    <span class="token punctuation">}</span></code></pre>
+<p>时间复杂度为O(logN)级别，高效又简单。</p>
+<h1 id="更新"><a href="#更新" class="headerlink" title="更新"></a>更新</h1><p>更新操作要注意的一点是一旦叶子节点更新了，那么它的祖辈节点都需要更新操作</p>
+<p>也是通过递归代码实现</p>
+<p>代码如下</p>
+<pre class=" language-java"><code class="language-java"><span class="token comment" spellcheck="true">//更新index索引位置为e</span>
+    <span class="token keyword">public</span> <span class="token keyword">void</span> <span class="token function">set</span><span class="token punctuation">(</span><span class="token keyword">int</span> index<span class="token punctuation">,</span>E e<span class="token punctuation">)</span><span class="token punctuation">{</span>
+        <span class="token keyword">if</span> <span class="token punctuation">(</span>index<span class="token operator">&lt;</span><span class="token number">0</span><span class="token operator">||</span>index<span class="token operator">>=</span>data<span class="token punctuation">.</span>length<span class="token punctuation">)</span>
+            <span class="token keyword">throw</span> <span class="token keyword">new</span> <span class="token class-name">IllegalArgumentException</span><span class="token punctuation">(</span><span class="token string">"Index is illega."</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+        data<span class="token punctuation">[</span>index<span class="token punctuation">]</span><span class="token operator">=</span>e<span class="token punctuation">;</span>
+        <span class="token function">set</span><span class="token punctuation">(</span><span class="token number">0</span><span class="token punctuation">,</span><span class="token number">0</span><span class="token punctuation">,</span>data<span class="token punctuation">.</span>length<span class="token operator">-</span><span class="token number">1</span><span class="token punctuation">,</span>index<span class="token punctuation">,</span>e<span class="token punctuation">)</span><span class="token punctuation">;</span>
+    <span class="token punctuation">}</span>
+
+    <span class="token keyword">private</span> <span class="token keyword">void</span> <span class="token function">set</span><span class="token punctuation">(</span><span class="token keyword">int</span> treeIndex<span class="token punctuation">,</span> <span class="token keyword">int</span> l<span class="token punctuation">,</span> <span class="token keyword">int</span> r<span class="token punctuation">,</span><span class="token keyword">int</span> index<span class="token punctuation">,</span>E e<span class="token punctuation">)</span> <span class="token punctuation">{</span>
+        <span class="token keyword">if</span><span class="token punctuation">(</span>l<span class="token operator">==</span>r<span class="token punctuation">)</span><span class="token punctuation">{</span>
+            tree<span class="token punctuation">[</span>treeIndex<span class="token punctuation">]</span><span class="token operator">=</span>e<span class="token punctuation">;</span>
+            <span class="token keyword">return</span><span class="token punctuation">;</span>
+        <span class="token punctuation">}</span>
+
+        <span class="token keyword">int</span> mid <span class="token operator">=</span> l<span class="token operator">+</span><span class="token punctuation">(</span>r<span class="token operator">-</span>l<span class="token punctuation">)</span><span class="token operator">/</span><span class="token number">2</span><span class="token punctuation">;</span>
+        <span class="token keyword">int</span> leftTreeIndex <span class="token operator">=</span> <span class="token function">leftChild</span><span class="token punctuation">(</span>treeIndex<span class="token punctuation">)</span><span class="token punctuation">;</span>
+        <span class="token keyword">int</span> rightTreeIndex <span class="token operator">=</span> <span class="token function">rightChild</span><span class="token punctuation">(</span>treeIndex<span class="token punctuation">)</span><span class="token punctuation">;</span>
+
+        <span class="token keyword">if</span><span class="token punctuation">(</span>index<span class="token operator">&lt;=</span>mid<span class="token punctuation">)</span>
+            <span class="token function">set</span><span class="token punctuation">(</span>leftTreeIndex<span class="token punctuation">,</span>l<span class="token punctuation">,</span>mid<span class="token punctuation">,</span>index<span class="token punctuation">,</span>e<span class="token punctuation">)</span><span class="token punctuation">;</span>
+        <span class="token keyword">else</span> <span class="token comment" spellcheck="true">//index>mid</span>
+            <span class="token function">set</span> <span class="token punctuation">(</span>rightTreeIndex<span class="token punctuation">,</span>mid<span class="token operator">+</span><span class="token number">1</span><span class="token punctuation">,</span>r<span class="token punctuation">,</span>index<span class="token punctuation">,</span>e<span class="token punctuation">)</span><span class="token punctuation">;</span>
+
+        tree<span class="token punctuation">[</span>treeIndex<span class="token punctuation">]</span> <span class="token operator">=</span> merger<span class="token punctuation">.</span><span class="token function">merge</span><span class="token punctuation">(</span>tree<span class="token punctuation">[</span>leftTreeIndex<span class="token punctuation">]</span><span class="token punctuation">,</span>tree<span class="token punctuation">[</span>rightTreeIndex<span class="token punctuation">]</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+
+    <span class="token punctuation">}</span>
+</code></pre>
+<p>完成，基于线段树的两大基本操作原理。</p>
 
       
     </div>
@@ -557,7 +617,7 @@ Process finished with exit code <span class="token number">0</span></code></pre>
       
         <div class="post-tags">
           
-            <a href="/tags/%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0/" rel="tag"># 学习笔记</a>
+            <a href="/tags/%E4%BD%95%E4%B8%8D%E5%9B%9E%E5%A4%B4%E7%9C%8B%E7%9C%8B%E6%95%B0%E6%8D%AE%E7%BB%93%E6%9E%84/" rel="tag"># 何不回头看看数据结构</a>
           
         </div>
       
@@ -662,7 +722,7 @@ Process finished with exit code <span class="token number">0</span></code></pre>
               
                 <a href="/archives/%7C%7C%20archive">
               
-                  <span class="site-state-item-count">3</span>
+                  <span class="site-state-item-count">4</span>
                   <span class="site-state-item-name">日志</span>
                 </a>
               </div>
@@ -673,7 +733,7 @@ Process finished with exit code <span class="token number">0</span></code></pre>
               
               <div class="site-state-item site-state-categories">
                 <a href="/categories/index.html">
-                  <span class="site-state-item-count">3</span>
+                  <span class="site-state-item-count">2</span>
                   <span class="site-state-item-name">分类</span>
                 </a>
               </div>
@@ -684,7 +744,7 @@ Process finished with exit code <span class="token number">0</span></code></pre>
               
               <div class="site-state-item site-state-tags">
                 <a href="/tags/index.html">
-                  <span class="site-state-item-count">2</span>
+                  <span class="site-state-item-count">3</span>
                   <span class="site-state-item-name">标签</span>
                 </a>
               </div>
@@ -748,7 +808,7 @@ Process finished with exit code <span class="token number">0</span></code></pre>
             
 
             
-              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-1"><a class="nav-link" href="#前言"><span class="nav-number">1.</span> <span class="nav-text">前言</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#介绍"><span class="nav-number">2.</span> <span class="nav-text">介绍</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#区间的一般操作"><span class="nav-number">3.</span> <span class="nav-text">区间的一般操作</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#实现"><span class="nav-number">4.</span> <span class="nav-text">实现</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#线段树的形式"><span class="nav-number">4.0.1.</span> <span class="nav-text">线段树的形式</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#如何把N个元素表示成一颗线段树"><span class="nav-number">4.0.2.</span> <span class="nav-text">如何把N个元素表示成一颗线段树</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#代码实现"><span class="nav-number">4.0.3.</span> <span class="nav-text">代码实现</span></a></li></ol></li></ol></li><li class="nav-item nav-level-1"><a class="nav-link" href="#查询"><span class="nav-number">5.</span> <span class="nav-text">查询</span></a></li></ol></div>
+              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-1"><a class="nav-link" href="#前言"><span class="nav-number">1.</span> <span class="nav-text">前言</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#介绍"><span class="nav-number">2.</span> <span class="nav-text">介绍</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#区间的一般操作"><span class="nav-number">3.</span> <span class="nav-text">区间的一般操作</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#实现"><span class="nav-number">4.</span> <span class="nav-text">实现</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#线段树的形式"><span class="nav-number">4.0.1.</span> <span class="nav-text">线段树的形式</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#如何把N个元素表示成一颗线段树"><span class="nav-number">4.0.2.</span> <span class="nav-text">如何把N个元素表示成一颗线段树</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#代码实现"><span class="nav-number">4.0.3.</span> <span class="nav-text">代码实现</span></a></li></ol></li></ol></li><li class="nav-item nav-level-1"><a class="nav-link" href="#查询"><span class="nav-number">5.</span> <span class="nav-text">查询</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#更新"><span class="nav-number">6.</span> <span class="nav-text">更新</span></a></li></ol></div>
             
 
           </div>
