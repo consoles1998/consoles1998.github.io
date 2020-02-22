@@ -68,7 +68,7 @@
 
 
 
-  <meta name="keywords" content="数据结构," />
+  <meta name="keywords" content="算法," />
 
 
 
@@ -81,15 +81,15 @@
 
 
 
-<meta name="description" content="介绍 又称字典树，Trie树，是一种树形结构，是一种哈希树的变种。典型应用是用于统计，排序和保存大量的字符串（但不仅限于字符串），所以经常被搜索引擎系统用于文本词频统计。它的优点是：利用字符串的公共前缀来减少查询时间，最大限度地减少无谓的字符串比较，查询效率比哈希树高。 代码实现构建一颗字典树package com.hwhjl.algorithm.tree.trie;  import java.u">
-<meta name="keywords" content="数据结构">
+<meta name="description" content="什么是堆排序？堆排序是通过优先队列（二叉堆）实现的排序。它的时间复杂度为O(N log N)，空间复杂度是O(N)，或者说是类似二叉树的复杂度，因为其本身就是一个在数组中实现的简化的完全二叉树，并不需要像二叉树那样复杂的操作和多余的指针空间，而只要将一个数组就可以完成。 优点不需要额外的空间，时间复杂度为O(N log N)，能解决大部分情况，运行较为稳定，对数据分布要求不高。 缺点对于一些对时间">
+<meta name="keywords" content="算法">
 <meta property="og:type" content="article">
-<meta property="og:title" content="Trie字典树">
-<meta property="og:url" content="http:&#x2F;&#x2F;hwhjl.com&#x2F;2019&#x2F;11&#x2F;18&#x2F;trie-zi-dian-shu&#x2F;index.html">
+<meta property="og:title" content="堆排序">
+<meta property="og:url" content="http:&#x2F;&#x2F;hwhjl.com&#x2F;2019&#x2F;11&#x2F;03&#x2F;pai-xu-zhuan-ti-dui-pai-xu&#x2F;index.html">
 <meta property="og:site_name" content="H&#39;s Blog">
-<meta property="og:description" content="介绍 又称字典树，Trie树，是一种树形结构，是一种哈希树的变种。典型应用是用于统计，排序和保存大量的字符串（但不仅限于字符串），所以经常被搜索引擎系统用于文本词频统计。它的优点是：利用字符串的公共前缀来减少查询时间，最大限度地减少无谓的字符串比较，查询效率比哈希树高。 代码实现构建一颗字典树package com.hwhjl.algorithm.tree.trie;  import java.u">
+<meta property="og:description" content="什么是堆排序？堆排序是通过优先队列（二叉堆）实现的排序。它的时间复杂度为O(N log N)，空间复杂度是O(N)，或者说是类似二叉树的复杂度，因为其本身就是一个在数组中实现的简化的完全二叉树，并不需要像二叉树那样复杂的操作和多余的指针空间，而只要将一个数组就可以完成。 优点不需要额外的空间，时间复杂度为O(N log N)，能解决大部分情况，运行较为稳定，对数据分布要求不高。 缺点对于一些对时间">
 <meta property="og:locale" content="zh-Hans">
-<meta property="og:updated_time" content="2020-01-08T12:37:58.074Z">
+<meta property="og:updated_time" content="2020-02-22T08:16:52.638Z">
 <meta name="twitter:card" content="summary">
 
 
@@ -120,13 +120,13 @@
 
 
 
-  <link rel="canonical" href="http://hwhjl.com/2019/11/18/trie-zi-dian-shu/"/>
+  <link rel="canonical" href="http://hwhjl.com/2019/11/03/pai-xu-zhuan-ti-dui-pai-xu/"/>
 
 
 
 
 
-  <title>Trie字典树 | H's Blog</title>
+  <title>堆排序 | H's Blog</title>
   
 
 
@@ -307,7 +307,7 @@
   
   
   <div class="post-block">
-    <link itemprop="mainEntityOfPage" href="http://hwhjl.com/2019/11/18/trie-zi-dian-shu/">
+    <link itemprop="mainEntityOfPage" href="http://hwhjl.com/2019/11/03/pai-xu-zhuan-ti-dui-pai-xu/">
 
     <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
       <meta itemprop="name" content="He Jinliang">
@@ -324,7 +324,7 @@
 
         
         
-          <h1 class="post-title" itemprop="name headline">Trie字典树</h1>
+          <h1 class="post-title" itemprop="name headline">堆排序</h1>
         
 
         <div class="post-meta">
@@ -338,8 +338,8 @@
               
                 <span class="post-meta-item-text">发表于</span>
               
-              <time title="创建于" itemprop="dateCreated datePublished" datetime="2019-11-18T19:41:52+08:00">
-                2019-11-18
+              <time title="创建于" itemprop="dateCreated datePublished" datetime="2019-11-03T14:25:35+08:00">
+                2019-11-03
               </time>
             
 
@@ -361,8 +361,8 @@
               
               
                 <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
-                  <a href="/categories/%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0/" itemprop="url" rel="index">
-                    <span itemprop="name">学习笔记</span>
+                  <a href="/categories/%E6%8E%92%E5%BA%8F%E4%B8%93%E9%A2%98/" itemprop="url" rel="index">
+                    <span itemprop="name">排序专题</span>
                   </a>
                 </span>
 
@@ -379,8 +379,8 @@
                 <span class="post-meta-item-icon">
                   <i class="fa fa-comment-o"></i>
                 </span>
-                <a href="/2019/11/18/trie-zi-dian-shu/#comments" itemprop="discussionUrl">
-                  <span class="post-comments-count valine-comment-count" data-xid="/2019/11/18/trie-zi-dian-shu/" itemprop="commentCount"></span>
+                <a href="/2019/11/03/pai-xu-zhuan-ti-dui-pai-xu/#comments" itemprop="discussionUrl">
+                  <span class="post-comments-count valine-comment-count" data-xid="/2019/11/03/pai-xu-zhuan-ti-dui-pai-xu/" itemprop="commentCount"></span>
                 </a>
               </span>
             
@@ -413,109 +413,101 @@
       
 
       
-        <h1 id="介绍"><a href="#介绍" class="headerlink" title="介绍"></a>介绍</h1><p> 又称字典树，Trie树，是一种树形结构，是一种哈希树的变种。典型应用是用于统计，排序和保存大量的字符串（但不仅限于字符串），所以经常被搜索引擎系统用于文本词频统计。它的优点是：利用字符串的公共前缀来减少查询时间，最大限度地减少无谓的字符串比较，查询效率比哈希树高。</p>
-<h1 id="代码实现"><a href="#代码实现" class="headerlink" title="代码实现"></a>代码实现</h1><h2 id="构建一颗字典树"><a href="#构建一颗字典树" class="headerlink" title="构建一颗字典树"></a>构建一颗字典树</h2><pre class=" language-java"><code class="language-java"><span class="token keyword">package</span> com<span class="token punctuation">.</span>hwhjl<span class="token punctuation">.</span>algorithm<span class="token punctuation">.</span>tree<span class="token punctuation">.</span>trie<span class="token punctuation">;</span>
-
-<span class="token keyword">import</span> java<span class="token punctuation">.</span>util<span class="token punctuation">.</span>TreeMap<span class="token punctuation">;</span>
-
-<span class="token keyword">public</span> <span class="token keyword">class</span> <span class="token class-name">Trie</span> <span class="token punctuation">{</span>
-
-    <span class="token keyword">private</span> <span class="token keyword">class</span> <span class="token class-name">Node</span><span class="token punctuation">{</span>
-        <span class="token keyword">public</span> <span class="token keyword">boolean</span> isWord<span class="token punctuation">;</span>
-        <span class="token keyword">public</span> TreeMap<span class="token operator">&lt;</span>Character<span class="token punctuation">,</span>Node<span class="token operator">></span> next<span class="token punctuation">;</span>
-
-        <span class="token keyword">public</span> <span class="token function">Node</span><span class="token punctuation">(</span><span class="token keyword">boolean</span> isWord<span class="token punctuation">)</span><span class="token punctuation">{</span>
-            <span class="token keyword">this</span><span class="token punctuation">.</span>isWord<span class="token operator">=</span>isWord<span class="token punctuation">;</span>
-            next<span class="token operator">=</span><span class="token keyword">new</span> <span class="token class-name">TreeMap</span><span class="token operator">&lt;</span><span class="token operator">></span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
-        <span class="token punctuation">}</span>
-
-        <span class="token keyword">public</span> <span class="token function">Node</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">{</span>
-            <span class="token keyword">this</span><span class="token punctuation">(</span><span class="token boolean">false</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
-        <span class="token punctuation">}</span>
+        <h1 id="什么是堆排序？"><a href="#什么是堆排序？" class="headerlink" title="什么是堆排序？"></a>什么是堆排序？</h1><p>堆排序是通过优先队列（二叉堆）实现的排序。它的时间复杂度为O(N log N)，空间复杂度是O(N)，或者说是类似二叉树的复杂度，因为其本身就是一个在数组中实现的简化的完全二叉树，并不需要像二叉树那样复杂的操作和多余的指针空间，而只要将一个数组就可以完成。</p>
+<h1 id="优点"><a href="#优点" class="headerlink" title="优点"></a>优点</h1><p>不需要额外的空间，时间复杂度为O(N log N)，能解决大部分情况，运行较为稳定，对数据分布要求不高。</p>
+<h1 id="缺点"><a href="#缺点" class="headerlink" title="缺点"></a>缺点</h1><p>对于一些对时间要求更高的程序略显捉急。</p>
+<p>在实现方面完全自己动手来实现会略显麻烦，但也只是一点点而已。</p>
+<p>在实践中会慢于使用在《排序专题——希尔排序》中给出的使用最优的增量队列的希尔排序。</p>
+<h1 id="思路"><a href="#思路" class="headerlink" title="思路"></a>思路</h1><p>因为二叉堆可以实现一个优先队列，而堆的特性是把大的元素放在上面，那我们可以想象，如果每次把堆最上面的元素给取走，然后维护一下堆就又是一个具有堆的性质的数组了，而被拿走一个元素之后，堆的大小也会减一，也就是说，堆的最后会空出来一个位置，那么这时候就可以将这个被取走的最大元素给放进那个空出来的位置。按这样的方式将所有元素取完，就完成了排序。</p>
+<h1 id="原理"><a href="#原理" class="headerlink" title="原理"></a>原理</h1><p>在C++中有一个快捷的堆排序方式，那就是使用C++自带的make_heap函数和pop_heap函数。</p>
+<p>make_heap函数能将任意一个数组转换成二叉堆。</p>
+<p>pop_heap函数能让一个堆中位于队首的元素出队，所谓的出队就是将第一个元素移动到队尾，然后维护不包含最后那个元素部分的堆。</p>
+<p>这样就只要先调用一下make_heap函数,然后循环调用pop_heap即可完成排序。</p>
+<h1 id="代码"><a href="#代码" class="headerlink" title="代码"></a>代码</h1><pre class=" language-cpp"><code class="language-cpp"><span class="token keyword">void</span> <span class="token function">sort_heap</span><span class="token punctuation">(</span><span class="token keyword">int</span> a<span class="token punctuation">[</span><span class="token punctuation">]</span><span class="token punctuation">,</span> <span class="token keyword">int</span> n<span class="token punctuation">)</span>
+<span class="token punctuation">{</span>
+    <span class="token function">make_heap</span><span class="token punctuation">(</span>a<span class="token punctuation">,</span> a <span class="token operator">+</span> n<span class="token punctuation">)</span><span class="token punctuation">;</span>
+    <span class="token keyword">for</span> <span class="token punctuation">(</span><span class="token keyword">int</span> i <span class="token operator">=</span> n<span class="token punctuation">;</span> i <span class="token operator">></span> <span class="token number">0</span><span class="token punctuation">;</span> i<span class="token operator">--</span><span class="token punctuation">)</span>
+    <span class="token punctuation">{</span>
+        <span class="token function">pop_heap</span><span class="token punctuation">(</span>a<span class="token punctuation">,</span> a <span class="token operator">+</span> i<span class="token punctuation">)</span><span class="token punctuation">;</span>
     <span class="token punctuation">}</span>
-
-    <span class="token keyword">private</span> Node root<span class="token punctuation">;</span>
-    <span class="token keyword">private</span> <span class="token keyword">int</span> size<span class="token punctuation">;</span>
-
-    <span class="token keyword">public</span> <span class="token function">Trie</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">{</span>
-        root<span class="token operator">=</span><span class="token keyword">new</span> <span class="token class-name">Node</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
-        size<span class="token operator">=</span><span class="token number">0</span><span class="token punctuation">;</span>
-    <span class="token punctuation">}</span>
-
-
-    <span class="token comment" spellcheck="true">//返回存储单词的数量</span>
-    <span class="token keyword">public</span> <span class="token keyword">int</span> <span class="token function">getSize</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">{</span>
-        <span class="token keyword">return</span> size<span class="token punctuation">;</span>
-    <span class="token punctuation">}</span>
-
-
-<span class="token punctuation">}</span>
-</code></pre>
-<h2 id="在字典树中添加单词"><a href="#在字典树中添加单词" class="headerlink" title="在字典树中添加单词"></a>在字典树中添加单词</h2><pre class=" language-java"><code class="language-java"> <span class="token comment" spellcheck="true">//添加一个单词</span>
-    <span class="token keyword">public</span> <span class="token keyword">void</span> <span class="token function">add</span><span class="token punctuation">(</span>String word<span class="token punctuation">)</span><span class="token punctuation">{</span>
-        Node cur <span class="token operator">=</span> root<span class="token punctuation">;</span>
-        <span class="token keyword">for</span><span class="token punctuation">(</span><span class="token keyword">int</span> i <span class="token operator">=</span><span class="token number">0</span> <span class="token punctuation">;</span>i<span class="token operator">&lt;</span>word<span class="token punctuation">.</span><span class="token function">length</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">;</span>i<span class="token operator">++</span><span class="token punctuation">)</span><span class="token punctuation">{</span>
-            <span class="token keyword">char</span> c <span class="token operator">=</span> word<span class="token punctuation">.</span><span class="token function">charAt</span><span class="token punctuation">(</span>i<span class="token punctuation">)</span><span class="token punctuation">;</span>
-            <span class="token keyword">if</span><span class="token punctuation">(</span>cur<span class="token punctuation">.</span>next<span class="token punctuation">.</span><span class="token function">get</span><span class="token punctuation">(</span>c<span class="token punctuation">)</span><span class="token operator">==</span>null<span class="token punctuation">)</span><span class="token punctuation">{</span>
-                cur<span class="token punctuation">.</span>next<span class="token punctuation">.</span><span class="token function">put</span><span class="token punctuation">(</span>c<span class="token punctuation">,</span><span class="token keyword">new</span> <span class="token class-name">Node</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+<span class="token punctuation">}</span></code></pre>
+<h1 id="代码分析"><a href="#代码分析" class="headerlink" title="代码分析"></a>代码分析</h1><p>就是用i来表示n的大小，然后每次按照这个大小来出队即可。</p>
+<h1 id="注意事项"><a href="#注意事项" class="headerlink" title="注意事项"></a>注意事项</h1><p>这里给出的代码只是最简单的实现方法，如果要自己实现的话，请先用二叉堆来实现一个优先队列，然后调用优先队列的操作方法即可。</p>
+<h1 id="改进"><a href="#改进" class="headerlink" title="改进"></a>改进</h1><p>将二叉堆操作中的上滤和下滤操作的代码单独提出，加入到排序的操作中去，这样就可以解决一些不能使用make_heap函数的情况，同时能够使用在链表中。但是不建议在链表中使用堆排序，因为堆排序有随机读取的要求，所以不适合在链表中使用。而且，在不使用标准库的make_heap和pop_heap的方式之后会极大得加快排序的速度。</p>
+<p>改进后的代码如下：</p>
+<pre class=" language-cpp"><code class="language-cpp"><span class="token keyword">void</span> <span class="token function">sort_heap</span><span class="token punctuation">(</span><span class="token keyword">int</span> a<span class="token punctuation">[</span><span class="token punctuation">]</span><span class="token punctuation">,</span> <span class="token keyword">int</span> n<span class="token punctuation">)</span>
+<span class="token punctuation">{</span>
+    <span class="token keyword">int</span> t<span class="token punctuation">;</span>
+    <span class="token comment" spellcheck="true">//实现make_heap的功能</span>
+    <span class="token keyword">for</span> <span class="token punctuation">(</span><span class="token keyword">int</span> i <span class="token operator">=</span> n <span class="token operator">/</span> <span class="token number">2</span><span class="token punctuation">;</span> i <span class="token operator">>=</span> <span class="token number">0</span><span class="token punctuation">;</span> i<span class="token operator">--</span><span class="token punctuation">)</span>
+    <span class="token punctuation">{</span>
+        t <span class="token operator">=</span> i <span class="token operator">+</span> <span class="token number">1</span><span class="token punctuation">;</span>
+        <span class="token keyword">while</span> <span class="token punctuation">(</span>t <span class="token operator">*</span> <span class="token number">2</span> <span class="token operator">&lt;=</span> n<span class="token punctuation">)</span>
+        <span class="token punctuation">{</span>
+            <span class="token keyword">if</span> <span class="token punctuation">(</span>t <span class="token operator">*</span> <span class="token number">2</span> <span class="token operator">+</span> <span class="token number">1</span> <span class="token operator">&lt;=</span> n<span class="token punctuation">)</span>
+            <span class="token punctuation">{</span>
+                <span class="token keyword">if</span> <span class="token punctuation">(</span>a<span class="token punctuation">[</span>t <span class="token operator">-</span> <span class="token number">1</span><span class="token punctuation">]</span> <span class="token operator">&lt;</span> a<span class="token punctuation">[</span>t <span class="token operator">*</span> <span class="token number">2</span> <span class="token operator">-</span> <span class="token number">1</span><span class="token punctuation">]</span> <span class="token operator">||</span> a<span class="token punctuation">[</span>t <span class="token operator">-</span> <span class="token number">1</span><span class="token punctuation">]</span> <span class="token operator">&lt;</span> a<span class="token punctuation">[</span>t <span class="token operator">*</span> <span class="token number">2</span><span class="token punctuation">]</span><span class="token punctuation">)</span>
+                <span class="token punctuation">{</span>
+                    <span class="token keyword">if</span> <span class="token punctuation">(</span>a<span class="token punctuation">[</span>t <span class="token operator">*</span> <span class="token number">2</span> <span class="token operator">-</span> <span class="token number">1</span><span class="token punctuation">]</span> <span class="token operator">></span> a<span class="token punctuation">[</span>t <span class="token operator">*</span> <span class="token number">2</span><span class="token punctuation">]</span><span class="token punctuation">)</span>
+                    <span class="token punctuation">{</span>
+                        <span class="token function">swap</span><span class="token punctuation">(</span>a<span class="token punctuation">[</span>t <span class="token operator">*</span> <span class="token number">2</span> <span class="token operator">-</span> <span class="token number">1</span><span class="token punctuation">]</span><span class="token punctuation">,</span> a<span class="token punctuation">[</span>t <span class="token operator">-</span> <span class="token number">1</span><span class="token punctuation">]</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+                        t <span class="token operator">*</span><span class="token operator">=</span> <span class="token number">2</span><span class="token punctuation">;</span>
+                        <span class="token keyword">continue</span><span class="token punctuation">;</span>
+                    <span class="token punctuation">}</span>
+                    <span class="token keyword">else</span>
+                    <span class="token punctuation">{</span>
+                        <span class="token function">swap</span><span class="token punctuation">(</span>a<span class="token punctuation">[</span>t <span class="token operator">*</span> <span class="token number">2</span><span class="token punctuation">]</span><span class="token punctuation">,</span> a<span class="token punctuation">[</span>t <span class="token operator">-</span> <span class="token number">1</span><span class="token punctuation">]</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+                        t <span class="token operator">=</span> t <span class="token operator">*</span> <span class="token number">2</span> <span class="token operator">+</span> <span class="token number">1</span><span class="token punctuation">;</span>
+                        <span class="token keyword">continue</span><span class="token punctuation">;</span>
+                    <span class="token punctuation">}</span>
+                <span class="token punctuation">}</span>
             <span class="token punctuation">}</span>
-            cur <span class="token operator">=</span> cur<span class="token punctuation">.</span>next<span class="token punctuation">.</span><span class="token function">get</span><span class="token punctuation">(</span>c<span class="token punctuation">)</span><span class="token punctuation">;</span>
-        <span class="token punctuation">}</span>
-        <span class="token keyword">if</span><span class="token punctuation">(</span><span class="token operator">!</span>cur<span class="token punctuation">.</span>isWord<span class="token punctuation">)</span><span class="token punctuation">{</span>
-            cur<span class="token punctuation">.</span>isWord<span class="token operator">=</span><span class="token boolean">true</span><span class="token punctuation">;</span>
-            size<span class="token operator">++</span><span class="token punctuation">;</span>
-        <span class="token punctuation">}</span>
-    <span class="token punctuation">}</span>
-
-</code></pre>
-<h2 id="从字典树中查询单词"><a href="#从字典树中查询单词" class="headerlink" title="从字典树中查询单词"></a>从字典树中查询单词</h2><pre class=" language-java"><code class="language-java"><span class="token comment" spellcheck="true">//查询一个单词是否在树中</span>
-    <span class="token keyword">public</span> <span class="token keyword">boolean</span> <span class="token function">contains</span><span class="token punctuation">(</span>String word<span class="token punctuation">)</span><span class="token punctuation">{</span>
-        Node cur <span class="token operator">=</span> root<span class="token punctuation">;</span>
-        <span class="token keyword">for</span><span class="token punctuation">(</span><span class="token keyword">int</span> i <span class="token operator">=</span> <span class="token number">0</span><span class="token punctuation">;</span>i<span class="token operator">&lt;</span>word<span class="token punctuation">.</span><span class="token function">length</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">;</span>i<span class="token operator">++</span><span class="token punctuation">)</span><span class="token punctuation">{</span>
-            <span class="token keyword">char</span> c <span class="token operator">=</span> word<span class="token punctuation">.</span><span class="token function">charAt</span><span class="token punctuation">(</span>i<span class="token punctuation">)</span><span class="token punctuation">;</span>
-            <span class="token keyword">if</span><span class="token punctuation">(</span>cur<span class="token punctuation">.</span>next<span class="token punctuation">.</span><span class="token function">get</span><span class="token punctuation">(</span>c<span class="token punctuation">)</span><span class="token operator">==</span>null<span class="token punctuation">)</span>
-                <span class="token keyword">return</span> <span class="token boolean">false</span><span class="token punctuation">;</span>
-            cur <span class="token operator">=</span> cur<span class="token punctuation">.</span>next<span class="token punctuation">.</span><span class="token function">get</span><span class="token punctuation">(</span>c<span class="token punctuation">)</span><span class="token punctuation">;</span>
-        <span class="token punctuation">}</span>
-        <span class="token keyword">return</span> cur<span class="token punctuation">.</span>isWord<span class="token punctuation">;</span>
-    <span class="token punctuation">}</span></code></pre>
-<h2 id="前缀搜索"><a href="#前缀搜索" class="headerlink" title="前缀搜索"></a>前缀搜索</h2><pre class=" language-java"><code class="language-java"> <span class="token comment" spellcheck="true">//前缀查询</span>
-    <span class="token keyword">public</span> <span class="token keyword">boolean</span> <span class="token function">isPrefix</span><span class="token punctuation">(</span>String prefix<span class="token punctuation">)</span><span class="token punctuation">{</span>
-        Node cur <span class="token operator">=</span> root<span class="token punctuation">;</span>
-        <span class="token keyword">for</span><span class="token punctuation">(</span><span class="token keyword">int</span> i <span class="token operator">=</span> <span class="token number">0</span><span class="token punctuation">;</span>i<span class="token operator">&lt;</span>prefix<span class="token punctuation">.</span><span class="token function">length</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">;</span>i<span class="token operator">++</span><span class="token punctuation">)</span><span class="token punctuation">{</span>
-            <span class="token keyword">char</span> c <span class="token operator">=</span> prefix<span class="token punctuation">.</span><span class="token function">charAt</span><span class="token punctuation">(</span>i<span class="token punctuation">)</span><span class="token punctuation">;</span>
-            <span class="token keyword">if</span><span class="token punctuation">(</span>cur<span class="token punctuation">.</span>next<span class="token punctuation">.</span><span class="token function">get</span><span class="token punctuation">(</span>c<span class="token punctuation">)</span><span class="token operator">==</span>null<span class="token punctuation">)</span>
-                <span class="token keyword">return</span> <span class="token boolean">false</span><span class="token punctuation">;</span>
-            cur<span class="token operator">=</span>cur<span class="token punctuation">.</span>next<span class="token punctuation">.</span><span class="token function">get</span><span class="token punctuation">(</span>c<span class="token punctuation">)</span><span class="token punctuation">;</span>
-        <span class="token punctuation">}</span>
-        <span class="token keyword">return</span> <span class="token boolean">true</span><span class="token punctuation">;</span>
-    <span class="token punctuation">}</span></code></pre>
-<p>因为所有的单词本身就是自己的前缀，所以Trie也叫前缀树</p>
-<h1 id="模糊匹配"><a href="#模糊匹配" class="headerlink" title="模糊匹配"></a>模糊匹配</h1><p>我们假设一个字符串中，‘.’代表的是匹配任意字符，那我们可以设计该方法</p>
-<pre class=" language-java"><code class="language-java"><span class="token comment" spellcheck="true">//模糊匹配（.可以代表任意字母）</span>
-    <span class="token keyword">public</span> <span class="token keyword">boolean</span> <span class="token function">search</span><span class="token punctuation">(</span>String word<span class="token punctuation">)</span><span class="token punctuation">{</span>
-        <span class="token keyword">return</span> <span class="token function">match</span><span class="token punctuation">(</span>root<span class="token punctuation">,</span>word<span class="token punctuation">,</span><span class="token number">0</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
-    <span class="token punctuation">}</span>
-
-    <span class="token keyword">private</span> <span class="token keyword">boolean</span> <span class="token function">match</span><span class="token punctuation">(</span>Node node<span class="token punctuation">,</span> String word<span class="token punctuation">,</span> <span class="token keyword">int</span> index<span class="token punctuation">)</span> <span class="token punctuation">{</span>
-        <span class="token keyword">if</span><span class="token punctuation">(</span>index<span class="token operator">==</span>word<span class="token punctuation">.</span><span class="token function">length</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">)</span>
-            <span class="token keyword">return</span> node<span class="token punctuation">.</span>isWord<span class="token punctuation">;</span>
-
-        <span class="token keyword">char</span> c <span class="token operator">=</span> word<span class="token punctuation">.</span><span class="token function">charAt</span><span class="token punctuation">(</span>index<span class="token punctuation">)</span><span class="token punctuation">;</span>
-        <span class="token keyword">if</span><span class="token punctuation">(</span>c<span class="token operator">!=</span> <span class="token string">'.'</span><span class="token punctuation">)</span><span class="token punctuation">{</span>
-            <span class="token keyword">if</span><span class="token punctuation">(</span>node<span class="token punctuation">.</span>next<span class="token punctuation">.</span><span class="token function">get</span><span class="token punctuation">(</span>c<span class="token punctuation">)</span><span class="token operator">==</span>null<span class="token punctuation">)</span>
-                <span class="token keyword">return</span> <span class="token boolean">false</span><span class="token punctuation">;</span>
-            <span class="token keyword">return</span> <span class="token function">match</span><span class="token punctuation">(</span>node<span class="token punctuation">.</span>next<span class="token punctuation">.</span><span class="token function">get</span><span class="token punctuation">(</span>c<span class="token punctuation">)</span><span class="token punctuation">,</span>word<span class="token punctuation">,</span>index<span class="token operator">+</span><span class="token number">1</span><span class="token punctuation">)</span>
-        <span class="token punctuation">}</span><span class="token keyword">else</span><span class="token punctuation">{</span>
-            <span class="token keyword">for</span><span class="token punctuation">(</span><span class="token keyword">char</span> nextChar<span class="token operator">:</span>node<span class="token punctuation">.</span>next<span class="token punctuation">.</span><span class="token function">keySet</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">)</span><span class="token punctuation">{</span>
-                <span class="token keyword">if</span><span class="token punctuation">(</span><span class="token function">match</span><span class="token punctuation">(</span>node<span class="token punctuation">.</span>next<span class="token punctuation">.</span><span class="token function">get</span><span class="token punctuation">(</span>nextChar<span class="token punctuation">)</span><span class="token punctuation">,</span>word<span class="token punctuation">,</span>index<span class="token operator">+</span><span class="token number">1</span><span class="token punctuation">)</span><span class="token punctuation">)</span>
-                    <span class="token keyword">return</span> <span class="token boolean">true</span><span class="token punctuation">;</span>
+            <span class="token keyword">else</span>
+            <span class="token punctuation">{</span>
+                <span class="token keyword">if</span> <span class="token punctuation">(</span>a<span class="token punctuation">[</span>t <span class="token operator">-</span> <span class="token number">1</span><span class="token punctuation">]</span> <span class="token operator">&lt;</span> a<span class="token punctuation">[</span>t <span class="token operator">*</span> <span class="token number">2</span> <span class="token operator">-</span> <span class="token number">1</span><span class="token punctuation">]</span><span class="token punctuation">)</span>
+                <span class="token punctuation">{</span>
+                    <span class="token function">swap</span><span class="token punctuation">(</span>a<span class="token punctuation">[</span>t <span class="token operator">-</span> <span class="token number">1</span><span class="token punctuation">]</span><span class="token punctuation">,</span> a<span class="token punctuation">[</span>t <span class="token operator">*</span> <span class="token number">2</span> <span class="token operator">-</span> <span class="token number">1</span><span class="token punctuation">]</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+                    t <span class="token operator">*</span><span class="token operator">=</span> <span class="token number">2</span><span class="token punctuation">;</span>
+                    <span class="token keyword">continue</span><span class="token punctuation">;</span>
+                <span class="token punctuation">}</span>
             <span class="token punctuation">}</span>
-            <span class="token keyword">return</span> <span class="token boolean">false</span><span class="token punctuation">;</span>
+            <span class="token keyword">break</span><span class="token punctuation">;</span>
         <span class="token punctuation">}</span>
-    <span class="token punctuation">}</span></code></pre>
-<h1 id="总结"><a href="#总结" class="headerlink" title="总结"></a>总结</h1><p>字典树的好处在于，它不在乎数据条目的多少，不管有多大的数据量，它只和传入的参数的长度有关，对于有规则的参数表现形式，比如英文单词，字典树可以大大提升其查找效率。</p>
-<p>​    </p>
+    <span class="token punctuation">}</span>
+
+    <span class="token keyword">for</span> <span class="token punctuation">(</span><span class="token keyword">int</span> i <span class="token operator">=</span> n<span class="token punctuation">;</span> i <span class="token operator">></span> <span class="token number">0</span><span class="token punctuation">;</span> i<span class="token operator">--</span><span class="token punctuation">)</span>
+    <span class="token punctuation">{</span>
+
+        <span class="token comment" spellcheck="true">//实现pop_heap的功能</span>
+        <span class="token keyword">int</span> temp<span class="token punctuation">,</span>j<span class="token punctuation">;</span>
+        j <span class="token operator">=</span> <span class="token number">1</span><span class="token punctuation">;</span>
+        temp <span class="token operator">=</span> a<span class="token punctuation">[</span><span class="token number">0</span><span class="token punctuation">]</span><span class="token punctuation">;</span>
+        <span class="token keyword">while</span> <span class="token punctuation">(</span>j<span class="token operator">*</span><span class="token number">2</span> <span class="token operator">&lt;=</span> i<span class="token punctuation">)</span>
+        <span class="token punctuation">{</span>
+            <span class="token keyword">if</span> <span class="token punctuation">(</span>j <span class="token operator">*</span> <span class="token number">2</span> <span class="token operator">+</span> <span class="token number">1</span> <span class="token operator">&lt;=</span> i<span class="token punctuation">)</span>
+            <span class="token punctuation">{</span>
+                <span class="token keyword">if</span> <span class="token punctuation">(</span>a<span class="token punctuation">[</span>j <span class="token operator">*</span> <span class="token number">2</span><span class="token punctuation">]</span> <span class="token operator">&lt;</span> a<span class="token punctuation">[</span>j <span class="token operator">*</span> <span class="token number">2</span> <span class="token operator">-</span> <span class="token number">1</span><span class="token punctuation">]</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+                a<span class="token punctuation">[</span>j <span class="token operator">-</span> <span class="token number">1</span><span class="token punctuation">]</span> <span class="token operator">=</span> a<span class="token punctuation">[</span>j <span class="token operator">*</span> <span class="token number">2</span> <span class="token operator">-</span> <span class="token number">1</span><span class="token punctuation">]</span><span class="token punctuation">;</span>
+                j <span class="token operator">=</span> j <span class="token operator">*</span> <span class="token number">2</span><span class="token punctuation">;</span>
+                <span class="token punctuation">}</span>
+                <span class="token keyword">else</span>
+                <span class="token punctuation">{</span>
+                    a<span class="token punctuation">[</span>j <span class="token operator">-</span> <span class="token number">1</span><span class="token punctuation">]</span> <span class="token operator">=</span> a<span class="token punctuation">[</span>j <span class="token operator">*</span> <span class="token number">2</span><span class="token punctuation">]</span><span class="token punctuation">;</span>
+                    j <span class="token operator">=</span> j <span class="token operator">*</span> <span class="token number">2</span> <span class="token operator">+</span> <span class="token number">1</span><span class="token punctuation">;</span>
+                <span class="token punctuation">}</span>
+            <span class="token punctuation">}</span>
+            <span class="token keyword">else</span>
+            <span class="token punctuation">{</span>
+                a<span class="token punctuation">[</span>j <span class="token operator">-</span> <span class="token number">1</span><span class="token punctuation">]</span> <span class="token operator">=</span> a<span class="token punctuation">[</span>j <span class="token operator">*</span> <span class="token number">2</span> <span class="token operator">-</span> <span class="token number">1</span><span class="token punctuation">]</span><span class="token punctuation">;</span>
+                j <span class="token operator">*</span><span class="token operator">=</span> <span class="token number">2</span><span class="token punctuation">;</span>
+            <span class="token punctuation">}</span>
+        <span class="token punctuation">}</span>
+        a<span class="token punctuation">[</span>j<span class="token number">-1</span><span class="token punctuation">]</span> <span class="token operator">=</span> a<span class="token punctuation">[</span>i<span class="token number">-1</span><span class="token punctuation">]</span><span class="token punctuation">;</span>
+        a<span class="token punctuation">[</span>i<span class="token number">-1</span><span class="token punctuation">]</span> <span class="token operator">=</span> temp<span class="token punctuation">;</span>
+    <span class="token punctuation">}</span>
+
+<span class="token punctuation">}</span></code></pre>
+<p>冗长但是高效</p>
 
       
     </div>
@@ -545,7 +537,7 @@
       
         <div class="post-tags">
           
-            <a href="/tags/%E6%95%B0%E6%8D%AE%E7%BB%93%E6%9E%84/" rel="tag"># 数据结构</a>
+            <a href="/tags/%E7%AE%97%E6%B3%95/" rel="tag"># 算法</a>
           
         </div>
       
@@ -558,8 +550,8 @@
         <div class="post-nav">
           <div class="post-nav-next post-nav-item">
             
-              <a href="/2019/11/17/lambda-expression-are-not-supported-at-language-level-5/" rel="next" title="Lambda expression are not supported at language level '5'">
-                <i class="fa fa-chevron-left"></i> Lambda expression are not supported at language level '5'
+              <a href="/2019/11/03/pai-xu-zhuan-ti-cha-ru-pai-xu/" rel="next" title="插入排序">
+                <i class="fa fa-chevron-left"></i> 插入排序
               </a>
             
           </div>
@@ -568,8 +560,8 @@
 
           <div class="post-nav-prev post-nav-item">
             
-              <a href="/2019/12/21/jian-dan-de-yong-java-zuo-yi-ge-pa-chong/" rel="prev" title="简单的用java做一个爬虫">
-                简单的用java做一个爬虫 <i class="fa fa-chevron-right"></i>
+              <a href="/2019/11/03/pai-xu-zhuan-ti-ji-shu-pai-xu/" rel="prev" title="计数排序">
+                计数排序 <i class="fa fa-chevron-right"></i>
               </a>
             
           </div>
@@ -740,7 +732,7 @@
             
 
             
-              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-1"><a class="nav-link" href="#介绍"><span class="nav-number">1.</span> <span class="nav-text">介绍</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#代码实现"><span class="nav-number">2.</span> <span class="nav-text">代码实现</span></a><ol class="nav-child"><li class="nav-item nav-level-2"><a class="nav-link" href="#构建一颗字典树"><span class="nav-number">2.1.</span> <span class="nav-text">构建一颗字典树</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#在字典树中添加单词"><span class="nav-number">2.2.</span> <span class="nav-text">在字典树中添加单词</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#从字典树中查询单词"><span class="nav-number">2.3.</span> <span class="nav-text">从字典树中查询单词</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#前缀搜索"><span class="nav-number">2.4.</span> <span class="nav-text">前缀搜索</span></a></li></ol></li><li class="nav-item nav-level-1"><a class="nav-link" href="#模糊匹配"><span class="nav-number">3.</span> <span class="nav-text">模糊匹配</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#总结"><span class="nav-number">4.</span> <span class="nav-text">总结</span></a></li></ol></div>
+              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-1"><a class="nav-link" href="#什么是堆排序？"><span class="nav-number">1.</span> <span class="nav-text">什么是堆排序？</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#优点"><span class="nav-number">2.</span> <span class="nav-text">优点</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#缺点"><span class="nav-number">3.</span> <span class="nav-text">缺点</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#思路"><span class="nav-number">4.</span> <span class="nav-text">思路</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#原理"><span class="nav-number">5.</span> <span class="nav-text">原理</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#代码"><span class="nav-number">6.</span> <span class="nav-text">代码</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#代码分析"><span class="nav-number">7.</span> <span class="nav-text">代码分析</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#注意事项"><span class="nav-number">8.</span> <span class="nav-text">注意事项</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#改进"><span class="nav-number">9.</span> <span class="nav-text">改进</span></a></li></ol></div>
             
 
           </div>
