@@ -81,19 +81,19 @@
 
 
 
-<meta name="description" content="介绍Socket都不陌生了，通过了复习之后，也是自己用java程序实现了socket的网络编程，分为TCP和UDP两部分，准备演示的有5个类  TCPServer TCPClient UDPServer UDPClient LengthCalcutator  前四个分别是TCP和UDP的客户端和服务端，LengthCalcutator类是执行给定的方法 话不多说，列出代码 TCPLengthCal">
+<meta name="description" content="介绍Socket都不陌生了，通过了复习之后，也是自己用java程序实现了socket的网络编程，这里分TCP和UDP两部分实现  TCPServer TCPClient UDPServer UDPClient LengthCalcutator  话不多说，列出代码 TCPLengthCalcutator类每当监听到了一个socket，都启动一个线程来执行相应代码，代码如下 package com.">
 <meta name="keywords" content="Socket">
 <meta property="og:type" content="article">
 <meta property="og:title" content="用java实现Socket编程">
 <meta property="og:url" content="http:&#x2F;&#x2F;hwhjl.com&#x2F;2020&#x2F;01&#x2F;02&#x2F;yong-java-shi-xian-socket-bian-cheng&#x2F;index.html">
 <meta property="og:site_name" content="H&#39;s Blog">
-<meta property="og:description" content="介绍Socket都不陌生了，通过了复习之后，也是自己用java程序实现了socket的网络编程，分为TCP和UDP两部分，准备演示的有5个类  TCPServer TCPClient UDPServer UDPClient LengthCalcutator  前四个分别是TCP和UDP的客户端和服务端，LengthCalcutator类是执行给定的方法 话不多说，列出代码 TCPLengthCal">
+<meta property="og:description" content="介绍Socket都不陌生了，通过了复习之后，也是自己用java程序实现了socket的网络编程，这里分TCP和UDP两部分实现  TCPServer TCPClient UDPServer UDPClient LengthCalcutator  话不多说，列出代码 TCPLengthCalcutator类每当监听到了一个socket，都启动一个线程来执行相应代码，代码如下 package com.">
 <meta property="og:locale" content="zh-Hans">
 <meta property="og:image" content="http:&#x2F;&#x2F;img.hjl1998.cn&#x2F;20200111203653.png">
 <meta property="og:image" content="http:&#x2F;&#x2F;img.hjl1998.cn&#x2F;20200111203645.png">
 <meta property="og:image" content="http:&#x2F;&#x2F;img.hjl1998.cn&#x2F;20200111210340.png">
 <meta property="og:image" content="http:&#x2F;&#x2F;img.hjl1998.cn&#x2F;20200111210334.png">
-<meta property="og:updated_time" content="2020-01-11T13:18:54.187Z">
+<meta property="og:updated_time" content="2020-02-23T06:33:25.485Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:image" content="http:&#x2F;&#x2F;img.hjl1998.cn&#x2F;20200111203653.png">
 
@@ -429,7 +429,7 @@
       
 
       
-        <h1 id="介绍"><a href="#介绍" class="headerlink" title="介绍"></a>介绍</h1><p><code>Socket</code>都不陌生了，通过了复习之后，也是自己用java程序实现了<code>socket</code>的网络编程，分为<code>TCP</code>和<code>UDP</code>两部分，准备演示的有5个类</p>
+        <h1 id="介绍"><a href="#介绍" class="headerlink" title="介绍"></a>介绍</h1><p><code>Socket</code>都不陌生了，通过了复习之后，也是自己用java程序实现了<code>socket</code>的网络编程，这里分<code>TCP</code>和<code>UDP</code>两部分实现</p>
 <ul>
 <li>TCPServer</li>
 <li>TCPClient</li>
@@ -437,7 +437,6 @@
 <li>UDPClient</li>
 <li>LengthCalcutator</li>
 </ul>
-<p>前四个分别是TCP和UDP的客户端和服务端，LengthCalcutator类是执行给定的方法</p>
 <p>话不多说，列出代码</p>
 <h1 id="TCP"><a href="#TCP" class="headerlink" title="TCP"></a>TCP</h1><h3 id="LengthCalcutator类"><a href="#LengthCalcutator类" class="headerlink" title="LengthCalcutator类"></a>LengthCalcutator类</h3><p>每当监听到了一个socket，都启动一个线程来执行相应代码，代码如下</p>
 <pre class=" language-java"><code class="language-java"><span class="token keyword">package</span> com<span class="token punctuation">.</span>hwhjl<span class="token punctuation">.</span>Socket<span class="token punctuation">;</span>

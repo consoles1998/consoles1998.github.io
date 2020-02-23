@@ -89,7 +89,7 @@
 <meta property="og:site_name" content="H&#39;s Blog">
 <meta property="og:description" content="什么是桶排序？桶排序是又称箱排序，是一种结合了比较式排序和桶式排序的排序方式，即有桶式排序的快速，又有比较式排序的节省空间的特性。所以其时间复杂度为O(N+K),空间复杂度为O(O)，其中K受限于桶的数量。但是这种排序对于一些特殊情况处理较为复杂。并没有快速排序那样灵活。适用于一些数据分布均匀的数列。 优点线性时间复杂度，速度快，分的桶数量越多，排序速度越快。 线性空间复杂度，节省空间。 缺点限制">
 <meta property="og:locale" content="zh-Hans">
-<meta property="og:updated_time" content="2020-02-22T08:17:21.737Z">
+<meta property="og:updated_time" content="2020-02-23T06:34:23.272Z">
 <meta name="twitter:card" content="summary">
 
 
@@ -456,7 +456,7 @@
         t <span class="token operator">+</span><span class="token operator">=</span> buckets<span class="token punctuation">[</span>i<span class="token punctuation">]</span><span class="token punctuation">.</span><span class="token function">size</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
     <span class="token punctuation">}</span>
 <span class="token punctuation">}</span></code></pre>
-<h1 id="代码分析"><a href="#代码分析" class="headerlink" title="代码分析"></a>代码分析</h1><p>参考代码为了简便起见，采用的是第二种方式，并调用了已完成的快排函数。快排函数参考此篇<a href="http://www.knightapple.cn/index.php/archives/85/" target="_blank" rel="noopener">《排序专题——快速排序》</a></p>
+<h1 id="代码分析"><a href="#代码分析" class="headerlink" title="代码分析"></a>代码分析</h1><p>参考代码为了简便起见，采用的是第二种方式，并调用了已完成的快排函数。</p>
 <p>这里设置了6个量，分别是桶的数量，桶集，最大最小元素，跨距，拷贝游标。</p>
 <p>桶的数量：预期平均每个桶装100个元素，所以桶的数量就等于<code>1+n/20</code>,因为当n小于20时仍然需要一个桶，所以需要加一。</p>
 <p>桶集：采用’vector&lt;vector<int>&gt;’这样的二维vector来存储，因为vector会自动得分配内存，所以操作较为便捷。</p>
